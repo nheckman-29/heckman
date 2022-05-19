@@ -1,8 +1,12 @@
 <h1>Nathan Heckman Resume Site</h1>
   
-<p>Heroku link: <a href = "https://heckman.herokuapp.com/"> </p>
+<p>Heroku link: heckman.herokuapp.com </p>
    
 <h2>Dependencies</h2>
+
+TO BE DETERMINED
+
+-----------------------------
   
 Flask: sqlAlchemy, flask_login,  UserMixin, LoginManager
 
