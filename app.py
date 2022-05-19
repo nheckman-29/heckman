@@ -13,6 +13,7 @@ app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
+
 @app.route("/", methods=["GET", "POST"])
 def initial():
     """
@@ -20,4 +21,5 @@ def initial():
     """
     return render_template("index.html")
 
-app.run(debug=True)
+
+app.run(host=os.getenv("IP", "0.0.0.0"), port=os.getenv("PORT", "8080"), debug=True)
