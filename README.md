@@ -12,3 +12,7 @@ LinkedIn API
 JSON
 
 request
+
+>
+Don't let the past be your present if you want the present to be your future.
+>
