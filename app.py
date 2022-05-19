@@ -10,7 +10,6 @@ load_dotenv(find_dotenv())
 
 app = Flask(__name__)
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
 
@@ -22,4 +21,8 @@ def initial():
     return render_template("index.html")
 
 
-app.run(host=os.getenv("IP", "0.0.0.0"), port=os.getenv("PORT", "8080"), debug=True)
+app.run(
+    host=os.getenv("IP", "0.0.0.0"), 
+    port=os.getenv("PORT", "8080"), 
+    debug=True
+)
