@@ -1,14 +1,12 @@
-<h1> Nathan Heckman Resume Site </h1>
+# Nathan Heckman Resume Site
 
+## [heckman.herokuapp.com](https://heckman.herokuapp.com/ "Come on you know you want to click")
 
-[heckman.herokuapp.com](https://heckman.herokuapp.com/)
-   
 # Dependencies
-  
-Flask
 
-LinkedIn API
+* Flask
+* LinkedIn API
+* JSON
+* request
 
-JSON
-
-request
+![Nathan Heckman](https://i.imgur.com/77I7qpW.jpg/ "Nathan Heckman")
