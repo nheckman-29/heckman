@@ -50,3 +50,24 @@
     background-color: #0058bd;
     color: white;
 }
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 1000px) {
+    /* Styling for entire main content section */
+    .main {
+        margin-top: 300px;
+    }
+
+    .topnav a, .topnav-centered {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  
+    .topnav-centered p { 
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
