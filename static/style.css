@@ -8,11 +8,6 @@
     width: 100%;
 }
 
-/* Styling for entire main content section */
-.main {
-    margin-top: 60px;
-}
-
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
@@ -49,6 +44,17 @@
 .topnav a.active {
     background-color: #0058bd;
     color: white;
+}
+
+/* Styling for entire main content section */
+.main {
+    margin-top: 60px;
+}
+.main iframe {
+    width: 90%;
+    height: 850px;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
