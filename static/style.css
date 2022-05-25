@@ -1,3 +1,7 @@
+body {
+    background-color: lightgray;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -49,6 +53,8 @@
 /* Styling for entire main content section */
 .main {
     margin-top: 60px;
+    display: inline-block;
+    width: 100%;
 }
 
 .main iframe {
@@ -62,6 +68,34 @@
     width: 90%;
     height: 850px;
     margin: 0 auto;
+    display: block;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+}
+
+.linkedin {
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.linkedin img {
+    height: 100px;
+    width: 100px;
+    margin: auto;
     display: block;
 }
 
@@ -85,5 +119,19 @@
         top: 0;
         left: 0;
         transform: none;
+    }
+
+    .left {
+        float: none;
+        width: 100%;
+        height: 150px;
+        text-align: center;
+    }
+
+    .right {
+        float: none;
+        width: 100%;
+        height: 150px;
+        text-align: center;
     }
 }
