@@ -1,5 +1,5 @@
 body {
-    background-color: lightgray;
+    background-color: rgb(209, 209, 209);
 }
 
 /* Add a black background color to the top navigation */
@@ -36,6 +36,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.topnav-centered img {
+    position: fixed;
+    height: 52px;
+    width: 52px;
+    top: 0%;
+    right: 0%;
 }
 
 /* Change the color of links on hover */
@@ -119,6 +127,13 @@ body {
         top: 0;
         left: 0;
         transform: none;
+    }
+
+    .topnav-centered img {
+        border-radius: 5px;
+        position: relative;
+        height: 52px;
+        width: 52px;
     }
 
     .left {
