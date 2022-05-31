@@ -23,7 +23,7 @@
         <div class="left">
             <h1>770-843-8014</h1>
             <br>
-            <h1>nheckman29@gmail.com</h1>
+            <h1 id="email">nheckman29@gmail.com</h1>
         </div>
         <div class="right">
             <a href="https://www.linkedin.com/in/nathan-heckman/">
@@ -45,11 +45,21 @@
                 Message:
                 <textarea name="message"></textarea>
             </label>
-            <!-- your other form fields go here -->
+            <!-- Other form fields go here if needed -->
             <button type="submit">Send</button>
         </form>
     </div>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <script>
+        /* NOT WORKING. NOT SURE HOW TO COPY H1 TO CLIPBOARD */
+        function copyEmail() {
+            const email = document.getElementById("email");
+            const copyButton = document.getElementById("copyButton")
+            copyButton.onclick = function () {
+                email.select();
+                document.execCommand("Copy");
+            }
+        }
+    </script>
 </body>
 
 </html>

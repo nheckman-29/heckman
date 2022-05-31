@@ -20,8 +20,35 @@
         <a href="/contact">Contact</a>
     </div>
     <div class="main">
-        <h1>Nathan Heckman</h1>
+        <div class="left">
+            <h1>Current & Former Employers</h1>
+            <div class="slideshow">
+                <img class="companies" src="static/adp.png" alt="ADP">
+                <img class="companies" src="static/neenah.png" alt="Neenah">
+                <img class="companies" src="static/rcb.jpg" alt="Robinson College of Business">
+                <img class="companies" src="static/gsu.png" alt="Georgia State University">
+                <img class="companies" src="static/classic.jpg" alt="Classic Collision">
+            </div>
+        </div>
     </div>
+
+
+    <script>
+        var slideIndex = 0;
+        slideshow();
+
+        function slideshow() {
+            var i;
+            var x = document.getElementsByClassName("companies");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) { slideIndex = 1 }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(slideshow, 2000);
+        }
+    </script>
 </body>
 
 </html>

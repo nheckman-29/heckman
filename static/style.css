@@ -61,7 +61,6 @@ body {
 /* Styling for entire main content section */
 .main {
     margin-top: 60px;
-    display: inline-block;
     width: 100%;
 }
 
@@ -130,6 +129,18 @@ body {
 .form input:focus,
 .form textarea:focus {
     border: 2px solid #555;
+}
+
+.slideshow {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.companies {
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
 }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
