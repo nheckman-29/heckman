@@ -21,13 +21,28 @@
     </div>
     <div class="main">
         <div class="left">
-            <h1>Current & Former Employers</h1>
+            <h1 style="font-weight: bold">Current Employer</h1>
+            <img class="adp" src="static/adp.png" alt="ADP">
+            <h2 class="current-title">Associate Application Developer</h2>
+        </div>
+        <div class="break"></div>
+        <div class="right">
+            <h1 style="font-weight: bold">Former Employers</h1>
             <div class="slideshow">
-                <img class="companies" src="static/adp.png" alt="ADP">
-                <img class="companies" src="static/neenah.png" alt="Neenah">
-                <img class="companies" src="static/rcb.jpg" alt="Robinson College of Business">
-                <img class="companies" src="static/gsu.png" alt="Georgia State University">
-                <img class="companies" src="static/classic.jpg" alt="Classic Collision">
+                <div class="items">
+                    <img class="companies" src="static/neenah.png" alt="Neenah">
+                    <h2 class="job-titles">IT Infrastructure Intern</h2>
+
+                    <img class="companies" src="static/rcb.jpg" alt="Robinson College of Business">
+                    <h2 class="job-titles">Classroom Support Technician</h2>
+                
+
+                    <img class="companies" src="static/gsu.png" alt="Georgia State University">
+                    <h2 class="job-titles">Event Technician</h2>
+
+                    <img class="companies" src="static/classic.jpg" alt="Classic Collision">
+                    <h2 class="job-titles">Detailer</h2>
+                </div>   
             </div>
         </div>
     </div>
@@ -40,12 +55,15 @@
         function slideshow() {
             var i;
             var x = document.getElementsByClassName("companies");
+            var y = document.getElementsByClassName("job-titles")
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
+                y[i].style.display = "none";
             }
             slideIndex++;
             if (slideIndex > x.length) { slideIndex = 1 }
             x[slideIndex - 1].style.display = "block";
+            y[slideIndex - 1].style.display = "block";
             setTimeout(slideshow, 2000);
         }
     </script>
