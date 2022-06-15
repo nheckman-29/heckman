@@ -35,6 +35,15 @@
     </div>
     <br>
     <div class="form">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <Text class="error">
+            {{message}}
+        </Text>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
         <form action="https://formspree.io/f/xpzbbrwv" method="POST">
             <label>Email:
                 <input type="email" name="email" required>
